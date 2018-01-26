@@ -1,0 +1,81 @@
+---
+layout: default
+id: overview
+nav-order: 1
+title: Explore USA's Capital Region
+intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati debitis, exercitationem enim veniam esse totam libero, repudiandae ad fugiat molestiae, in nobis. Modi, sed maxime tempora est repellendus eligendi!
+---
+
+<div class="site-title">
+  <div class="row row--padding text--center page__content">
+    <div class="row">
+      <h1 class="title title--banner"><span class="title title--banner-sub">Explore</span> USA's Capital <span class="title title--banner-sub space--xs">Region</span></h1>
+      <a href="#offers" class="btn btn--red">See Offers</a>
+    </div>
+  </div>
+  {% include nav/microsite-nav.html %}
+  <div class="site__bg"></div>
+</div>
+
+{% for section in site.data.sections %}
+  <section id="{{section.id}}" class="section section--{{section.id}} site-header__offset bg--beige" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/bg.jpg');">
+
+    {% if section.pois %}
+
+      <div class="row row--padding">
+
+        <div class="row topic">
+          <div class="topic__text">
+            <h2 class="title title--xl text--red">{{section.title}}</h2>
+            <div class="space--sm"></div>
+            <p class="text--lg">{{section.description}}</p>
+          </div>
+          <div class="topic__image">
+            <div class="image-block">
+              <div class="image-block__image bg-img" style="background-image: url('{{site.baseurl}}/img/img.jpg');"></div
+             ><div class="image-block__image bg-img" style="background-image: url('{{site.baseurl}}/img/img.jpg');"></div
+             ><div class="image-block__image bg-img" style="background-image: url('{{site.baseurl}}/img/img.jpg');"></div>
+               <!-- <div class="image-block__image bg-img" style="background-image: url('{{site.baseurl}}/img/content/{{topic.id}}/01.jpg');"></div
+              ><div class="image-block__image bg-img" style="background-image: url('{{site.baseurl}}/img/content/{{topic.id}}/02.jpg');"></div
+              ><div class="image-block__image bg-img" style="background-image: url('{{site.baseurl}}/img/content/{{topic.id}}/03.jpg');"></div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="pois">
+          <div class="title title--core title--xxxs title--bold title--upper title--kerning text--center">{{section.pois.title}}</div>
+          <ul class="pois__list">
+            {% for item in section.pois.items %}<li id="tracking-poi-{{item.id}}" class="poi js-open-modal" data-open-modal="{{item.id}}">
+              <!-- <div class="bg-img bg-img--16-9" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/pois/{{item.id}}.jpg');"></div> -->
+              <div class="bg-img bg-img--16-9" style="background-image: url('{{site.baseurl}}/img/img.jpg');"></div>
+            </li>{% endfor %}
+          </ul>
+        </div>
+
+        {% else %}
+
+          <!-- for the getting there and offer sections which break the content pattern -->
+          <div class="row row--padding">
+            {{section.content | liquify}}
+          </div>
+
+        {% endif %}
+    </section>
+
+{% endfor %}
+
+<section id="offers" class="section section--offers site-header__offset bg--beige-light">
+  <div class="row row--padding">
+    <div class="text--center vpad--lg">
+      <h2 class="title title--xl">Special Offers</h2>
+    </div>
+    {% include components/offers.html %}
+  </div>
+</section>
+
+
+
+{% include components/offer-promo.html %}
+<div class="row row--100 vpad--md text--grey text--center text--sm bg--black" style=" background-color:{{section.bg-color}}">
+  <p>© Copyright <span class="js-year">2018</span> Secret Escapes</p>
+</div>

@@ -1,0 +1,21 @@
+<div class="js-modal modal__bg is-closed">
+  <!-- loop through the page content for each section and get all pois -->
+  <!-- need to label pois so the prev & next stay in the right sections, just like ba new orleans -->
+  {% for section in site.data.sections %}
+    {% for item in section.pois.items %}
+
+      <div class="modal modal--series is-closed" data-modal-id="{{item.id}}" data-modal-group="{{section.id}}">
+        <div class="js-close-modal modal__close"></div>
+        <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+        <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+        <!-- <div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/{{modal.id}}.jpg');"></div> -->
+        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/img.jpg');"></div>
+        <div class="modal__content">
+          <h3 class="title title--sm title--core text--center">{{item.title}}</h3>
+          <p class="space--sm">{{item.description}}</p>
+        </div>
+      </div>
+
+    {% endfor %}
+  {% endfor %}
+</div>

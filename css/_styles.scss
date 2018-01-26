@@ -1,0 +1,179 @@
+// general styles for the project that wouldn't be a reuseable component
+
+.bg {
+  &--white       { background-color: $white; }
+  &--grey        { background-color: $grey-lightest; }
+  &--beige       { background-color: $cru-beige; }
+  &--beige-light { background-color: $cru-beige-light; }
+  &--black       { background-color: $grey-darkest; }
+}
+
+.site-title {
+  position: relative;
+  height: 750px;
+  padding-top: $core-nav-height-sm;
+  padding-bottom: $core-nav-height-sm;
+  color: $white;
+  @include bp(md){
+    padding-top: $core-nav-height;
+    padding-bottom: $core-nav-height;
+  }
+  @include vbp(650px){
+    height: 100%;
+    padding-top: 22.5vh;
+  }
+  .flexbox & {
+    display: flex;
+    align-items: center;
+    padding-top: $core-nav-height;
+  }
+}
+
+.img-block {
+  text-align: center;
+  line-height: 0;
+  > * { display: inline-block; }
+  &--3-3-3 > * { width: 100%; max-width: 300px; }
+  @include bp(lg){
+    &--3-3-3 > * { width: 33.33%; max-width: none; }
+  }
+}
+
+.price {
+  color: $cru-red;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.site__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-background;
+  background-image: url('../img/bg/bg.jpg');
+  background-color: #302419;
+  @include background-attributes;
+}
+
+.is-stuck {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: $z-nav-upper;
+}
+
+.nbsp {
+  display: none;
+  @include bp(lg){ display: inline; }
+}
+
+
+
+
+
+
+
+
+
+
+
+.section {
+  position: relative;
+  min-height: 100%;
+  @include background-attributes;
+}
+
+.topic {
+  @include layout(12 1);
+  &__image { width: 100%; }
+  &__text,
+  &__image {
+    max-width: $lg;
+    margin-top: $s6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $s0;
+  }
+  &--center { text-align: center; }
+  @include bp(xxl){
+    &--center { text-align: left; }
+    &__text  { @include span(6); }
+    &__image { @include span(last 6); }
+    .flexbox & {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.image-block {
+  line-height: 0;
+  &__image {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $grey-dark;
+    // keeps a 16:9 aspect ratio
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 56.25%;
+    }
+    &:first-child { width: 100%; }
+  }
+  &--16-9 &__image:before {
+    padding-top: 56.25%;
+  }
+}
+
+
+.pois {
+  margin-top: $s4;
+  padding: $s4 $s0;
+  text-align: center;
+  color: $cru-red;
+  background-color: rgba($white,.4);
+  &__list {
+    margin-top: $s1;
+    line-height: 1;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+
+.poi {
+  position: relative;
+  display: inline-block;
+  width: 210px;
+  opacity: .8;
+  transition: opacity $transition-time ease;
+  cursor: pointer;
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: $z-content-upper;
+    right: 8px;
+    bottom: 8px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/icons/plus.png');
+    .svg & { background-image: url('../img/icons/plus.svg'); }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  &:hover{ opacity: 1; }
+  & + & { margin-left: 10px; }
+  @include bp(large){
+    & + & { margin-left: 20px; }
+  }
+}

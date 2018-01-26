@@ -1,0 +1,141 @@
+- id: road
+  title: Scenic road trips
+  nav-title: Road Trips
+  description: "You've heard it said that the journey is its own destination, and in few places is this more true than the Capital Region. As you head off to wander through quaint small towns like Williamsburg and Annapolis and visit historic monuments and Civil War sights, or to discover the charms of the Chesapeake Bay or quiet solitude of Shenandoah National Park – two of America's natural wonders – you'll discover the many Virginia and Maryland scenic byways connecting them. You'll find that these roads are just as spectacular as the landmarks and lookouts they link, taking you along sparkling waters, sprawling vineyards, verdant valleys and soaring peaks."
+
+  pois:
+    title: Answer the call of the open road
+    items:
+
+      - id: skyline-drive
+        title: Skyline Drive
+        description: "Few road trips in America – or the world – can compare to a journey along Virginia's iconic Skyline Drive. Cruising along this 105-mile scenic byway or stopping at one of its 75 lookouts, you'll have a front-row seat to first-class views of the Blue Ridge Mountains, Shenandoah Valley and Virginia Piedmont – and you'll even get some history with your scenery, as the ride takes you not only through Shenandoah National Park, but into a National Historic Landmark district."
+
+      - id: chesapeake-country-national-scenic-byway
+        title: Chesapeake Country National Scenic Byway
+        description: "Maryland's first designated scenic byway holds another intriguing distinction: It's both a coastal drive and a wine trail, which is another way of saying that it's the rare road-trip route where you can sit down for a seafood-and-wine pairing and both components will have been locally sourced. A bonus feature of this Tidewater-region route are bike paths and hiking trails, to help you work up an appetite for those famously fresh oysters and acclaimed Chardonnays."
+
+      - id: george-washington-memorial-parkway
+        title: George Washington Memorial Parkway
+        description: "There are a lot of ways you might honour the memory of America's inaugural president: visiting the site of his birth, admiring the capital that he founded, learning about the Potomac canal that he planned as an amateur engineer. Fit all these experiences into just an easy day or two by following the George Washington Memorial Parkway, which has linked significant locales from his life since its 1932 inception for his would-have-been bicentennial birthday."
+
+      - id: maryland-historic-national-road
+        title: Maryland Historic National Road
+        description: "If \"a trip down memory lane...\" were a real place, it might look like Maryland Historic National Road. This 170-mile route, which was the first federally-funded highway in America, is as nostalgic as they come – complete with Main Street communities, 19th-century train towns and even an artisan's village. While away a lazy weekend browsing its antiques markets and farmers markets, tasting wines at its vineyards and taking rides on its scenic railways."
+
+      - id: virginia-s-heritage-music-trail
+        title: Virginia's Heritage Music Trail
+        description: "Thought the US national anthem was the Chesapeake's only contribution to music? Take a drive down the Crooked Road, southwestern Virginia's 300-mile music trail, and you'll discover hundreds of other jubilant, uplifting songs to sing – or make you want to dance. Immerse yourself in bluegrass, blues and gospel melodies, as you hit the four cities and 54 towns on this mountain-music route between the Blue Ridge Highlands and heart of Appalachia."
+
+
+- id: outdoors
+  title: Outdoor Adventures
+  nav-title: Outdoor Adventures
+  description: "The Capital Region is a place where you really feel the seasons. Each time of year comes with its own distinct weather conditions, whether it be the briskness of autumn or the balminess of summertime. One thing all four have in common? Outdoor-adventuring options in spades, though the form these take varies: whether it's zip-lining in autumn, skiing in winter or swimming in warmer months. Not that a handful of evergreen options aren't available, like biking or jogging in national parks – you'll still see the outdoors coming to life. Imagine Shenandoah during the autumn bird migration or the National Mall framed by cherry blossoms – though each are open nearly every day of the year, the time of year can make them extra special."
+
+  pois:
+    title: Get an outside perspective
+    items:
+
+      - id: assateague-state-park-paddling
+        title: Assateague State Park Paddling
+        description: "You may already know Assateague for its wild horses – not least, children's-book heroine Misty of Chincoteague, whose fictional story begins on this island – but how about its marine life? Assateague State Park, Maryland's only oceanfront park, is also home to spot, flounder, sea trout and even dolphins, plus herons, egrets and occasionally endangered falcons. Scout for them and the ponies from atop a paddleboard, as you glide around natural canals, open bay and sea."
+
+      - id: virginia-beach-wildlife-watching
+        title: Virginia Beach Wildlife Watching
+        description: "It's hard to beat the people-watching on the Virginia Beach Boardwalk, but the many types of Virginia Beach wildlife give the people some stiff competition. Dozens of species of waterfowl make the city's 8,000-acre Back Bay National Wildlife Refuge, sandwiched between the namesake bay and open Atlantic, another riveting place to sit and spectate. Depending on what season you vist, you might even glimpse migratory birds heading up or down the Atlantic Flyway."
+
+      - id: city-slicking
+        title: City Slicking
+        description: "When you hear \"national park,\" you probably think of canyons, geysers, or mountains, like those in Virginia's Blue Ridge range. There happen to be some national parks even closer to DC, however, and while they may showcase monuments and memorials rather than natural wonders, each is still a perfect setting for your next outdoor adventure. Make the National Mall your next jogging or biking trail, or relocate to Rock Creek Park for horseback riding."
+
+      - id: chesapeake-bay-cruising
+        title: Chesapeake Bay Cruising
+        description: "A Norfolk cruise isn't just a chance to see Virginia from a different vantage point along the Elizabeth River – it's also a chance to get a closer look into America's military history, with popular ships like American Rover showing you around the world's largest naval base and America's Atlantic Feet. Stand on one storied vessel, while gazing at many, many more: submarines, missile cruisers and aircraft carriers, to name just a few."
+
+      - id: appalachian-trail-hiking
+        title: Appalachian Trail Hiking
+        description: "\"A journey of a thousand miles begins with a single step,\" goes the old proverb, and so does the Appalachian Trail's journey of 2,180 miles (which roughly translates to five million steps). It goes without saying that completing this arduous journey isn't for everyone, but if you'd like to hike a smaller part of it, the 590-mile leg through Virginia and Maryland is particularly spectacular – affording sweeping views of treetops, valleys and rolling hills."
+
+
+- id: history
+  title: History & Heritage
+  nav-title: History & Heritage
+  description: "Is any region of the USA more synonymous with history than the Capital Region? Sure, every major metropolitan area in America has it, but rarely the kind that has come to guide the course of national events. DC has been the capital since 1790, and its influence has extended far beyond politics, as well as beyond its borders – just think of the scandals that inspired movies like All the President's Men or the First Ladies who redefined women's clothing. But it's outside the city proper and into Maryland and Virginia where the road to a DC capital was paved, and where the modern union, from its film business to its fashion industry, was born."
+
+  pois:
+    title: Look deep into America's past
+    items:
+
+      - id: dc-monuments-and-memorials
+        title: DC Monuments and Memorials
+        description: "One of your first DC stops should obviously be the National Mall, with its monuments and memorials that have come to serve as a shorthand for the city itself. Learn about some of the most important periods in American history, from the nation's birth to the Civil War and antebellum period to the 1940s and '60s, at the Washington Monument and Jefferson, Lincoln and World War II and Vietnam War memorials – and never spend a cent for this wealth of information, as admission is complimentary."
+
+      - id: the-historic-triangle
+        title: The Historic Triangle
+        description: "Jamestown, Williamsburg and Yorktown together tell much of the story of colonial history, and the Historic Triangle makes it easy to visit all three. Begin in Jamestown, England's first American settlement and Virginia colony's first capital, before moving to the subsequent capital and finally the site where the Revolution ended – along the 23-mile Colonial Parkway, they're conveniently set in chronological order, from south to north."
+
+      - id: dark-spots
+        title: Dark Spots
+        description: "Take a break from thinking about the revolutionary values of life, liberty and the pursuit of happiness to contemplate the afterlife for a short while, with a ghost tour of the Capital Region. Delve into the spectral side of DC, Annapolis, Frederick, Richmond or Lexington – perhaps even encountering one of the spectres. Need more thrills? Hop on a Wicked History tour instead, listening to tales of killers and criminals."
+
+      - id: civil-war-sites
+        title: Civil War Sites
+        description: "Washington has been the capital since 1790, less than 10 years after the war was won, so it's natural to associate the Capital Region with the Revolution. But Virginia and Maryland hold myriad sites to appeal to the Civil War historian. Explore the Graffiti House, the former soldiers' hospital in Culpeper, Sharpsburg's Antietam National Battlefield, and Appomattox Court House National Historical Park. Or, visit the various sites around Richmond."
+
+      - id: presidential-homes
+        title: Presidential Homes
+        description: "The United States may never have had a monarchy, but the homes of American presidents past are grand nonetheless. Find five of them in Virginia and Maryland. These include the former residences of James Madison, James Monroe and John Tyler, plus – most famously – Mount Vernon and Monticello, the first a National Historic Landmark and the second a UNESCO World Heritage Site."
+
+
+- id: food
+  title: Culinary Experiences
+  nav-title: Culinary Experiences
+  description: "The capital is more than just a headquarters of the American administration; it's also a capital of American cuisine, and it's been that way since George Washington chopped down his father's cherry tree. As you absorb the sights, sounds and sensations of this city and region, be sure to also sample its many flavours, whether at one of the dining establishments that date back to the colonial era, a burger joint from the 1960s, a trendy new eatery in the Shaw district, a seafood shack on the Chesapeake or Charm City Cakes from Cake Boss. On the way, you'll pick up all sorts of interesting trivia – probably including the fact that the Washington cherry-tree episode never actually happened."
+
+  pois:
+    title: Satisfy your Capital cravings
+    items:
+
+      - id: dc-s-michelin-guide
+        title: DC's Michelin Guide
+        description: "A city tasked with feeding a head of state will rarely have any shortage of world-class restaurants. In the case of the capital, which has been the subject of its own Michelin guide for three years now, there happens to be a whopping 14 eateries with one or more stars. Recipients in 2018 run from molecular-gastronomy hotspot MINIBAR by José Andrés to Italian Fiola to guidebook newcomers and prix-fixe favorites Komi and Metier."
+
+      - id: food-tours
+        title: Food Tours
+        description: "Make your DC experience twice as productive, and dive into local history and food at the same time. You'll have plenty of options, with food-tour operators set all around the Capital Region. Three standouts and tried-and-tested crowd-pleasers are DC Metro Food Tours, Coastal Food Tours of Virginia and Charm City Food Tours in Baltimore."
+
+      - id: historic-dining-destinations
+        title: Historic Dining Destinations
+        description: "Fancy yourself as someone with presidential tastes? There's only one way to find out: dining where past presidents have dined. DC's got a hearty serving of historic culinary establishments, from Old Ebbitt Grill (a favorite of Grover Cleveland and Teddy Roosevelt) to JFK standby The Monocle. Should you want a historic meal without the presidential seal of approval, however, 20th-century institutions like Clyde's and Tastee Diner are still going strong."
+
+      - id: wineries
+        title: Wineries
+        description: "You could structure an entire Capital Region vacation around wine tastings: the wineries throughout Maryland and Virginia number more than 400. Follow a wine route, map out your own wine trail, or forget having to drive at all and jump on a guided wine tour. Whatever form your itinerary takes, be sure to drop by Early Mountain Vineyards for a cheese or charcuterie board and Stone Tower Winery for a SOMMinar or wine dinner – and consider chasing your vino with local beer, vodka or gin."
+
+      - id: seafood-spots
+        title: Seafood Spots
+        description: "Whatever kind of seafood you crave, the Chesapeake likely has it. Discover this firsthand at Rappahannock Oyster Bar in Union Market, Richmond's Rappahannock Restaurant, or Cantler's Riverside Inn in Annapolis, where you can crack crabs on the water. Maryland's Crisfield bills itself as the Crab Capital of the World, with Linton's Seafood even boasting an all-you-can-eat meal plan for enthusiasts."
+
+
+- id: travel
+  title: Getting There
+  nav-title: Getting There
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure in ipsa tenetur commodi labore at autem saepe tempore, corrupti aliquam magni sit! Magni dolorum necessitatibus voluptatibus ut voluptates, quaerat.
+  content: >
+    <div class="row row--lg text--center">
+      <h2 class="title title--xxl text--red">Getting There</h2>
+      <p class="space--sm text--xl">Fly nonstop to Washington Dulles International Airport with British Airways, United Airlines and Virgin Atlantic.</p>
+    </div>
+    <div class="row text--center">
+      <div class="bob bob--6-6">
+        <div class="bob__image">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.baseurl}}/img/content/travel/airport.jpg');"></div>
+        </div>
+        <div class="bob__text">
+          <h3 class="title title--md text--red">Travelling to the Capital Region</h3>
+          <p class="space--xs">Just 26 miles west of Washington, DC, Washington Dulles International Airport is centrally located in America's Capital Region and convenient to all destinations and activities across Washington, DC, Virginia and Maryland. Daily nonstop flights from the UK to Washington Dulles International Airport with British Airways, United Airlines and Virgin Atlantic make getting here easy.</p>
+          <a href="#link" class="btn btn--red-outline">Find Out More</a>
+        </div>
+      </div>
+    </div>
