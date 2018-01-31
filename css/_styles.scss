@@ -114,12 +114,12 @@
   &__image {
     position: relative;
     display: inline-block;
+    float: left;
     width: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: $grey-dark;
-    // keeps a 16:9 aspect ratio
     &:before {
       display: block;
       content: "";
