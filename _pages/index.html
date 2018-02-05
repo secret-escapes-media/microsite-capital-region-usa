@@ -9,13 +9,31 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati 
 <div class="site-title">
   <div class="row row--padding text--center page__content">
     <div class="row">
-      <h1 class="title title--banner"><span class="title title--banner-sub">Explore</span> USA's Capital <span class="title title--banner-sub space--xs">Region</span></h1>
+      <div class="title title--xxs title--kerning title--seporated"><span>Washington, DC</span><span>Virginia</span><span>Maryland</span></div>
+      <h1 class="title title--banner">DC & Beyond</h1>
+      <h2 class="row row--md title title--banner-sub space--xs">Discover America's Capital Region</h2>
       <a href="#offers" class="btn btn--red">See Offers</a>
     </div>
   </div>
   {% include nav/microsite-nav.html %}
   <div class="site__bg"></div>
 </div>
+
+<section class="vpad--xxxl bg--beige">
+  <div class="row row--6-6-gutters row--padding row--valign">
+    <div class="col">
+      <div class="video js-youtube-thumbnail" data-thumbnail-img="{{site.baseurl}}/img/content/video.jpg">
+        <iframe class="video__iframe" src='https://www.youtube.com/embed/0bre_M5f_C8?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+      </div>
+    </div>
+    <div class="col">
+      <div class="text--lg">
+        <p>Discover startling diversity in America’s Capital Region, where Washington, DC, Maryland and Virginia meet to offer any traveller natural splendour, fascinating heritage and foodie delights.</p>
+        <p class="space--xs">Two vibrant states encircle the neo-classical elegance of America’s capital, Washington, DC. Discover the urban charms of the capital, before embarking on adventurous drives through jaw-dropping countryside. Historical curiosities abound, from America’s first settlements to Civil War sites, interspersed with enthralling outdoor adventures. Unpick wine trails, alight at Michelin restaurants, and experience America’s diversity all in this remarkable region.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% for section in site.data.sections %}
   <section id="{{section.id}}" class="section section--{{section.id}} site-header__offset bg--beige" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/bg.jpg');">
@@ -43,7 +61,7 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati 
           <div class="title title--core title--xxxs title--bold title--upper title--kerning text--center">{{section.pois.title}}</div>
           <ul class="pois__list">
             {% for item in section.pois.items %}<li id="tracking-poi-{{item.id}}" class="poi js-open-modal" data-open-modal="{{item.id}}">
-              <div class="bg-img bg-img--16-9" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/pois/{{item.id}}.jpg');"></div>
+              <div class="bg-img bg-img--16-9" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/pois/small/{{item.id}}.jpg');"></div>
             </li>{% endfor %}
           </ul>
         </div>
@@ -62,8 +80,9 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati 
 
 <section id="offers" class="section section--offers site-header__offset bg--beige-light">
   <div class="row row--padding">
-    <div class="text--center vpad--lg">
+    <div class="text--center">
       <h2 class="title title--xl">Special Offers</h2>
+      <div class="space--lg"></div>
     </div>
     {% include components/offers.html %}
   </div>

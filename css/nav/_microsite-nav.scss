@@ -73,11 +73,11 @@ $nav-width-bp:        880px;
     &:last-child { border-right: 0; }
     @include transition;
     &.is-active {
-       background-color: rgba($cru-grey,.66);
+       background-color: rgba($cru-grey,.8);
        // border-right-color: transparent;
        &:hover { background-color: $cru-grey; }
     }
-    &:hover { background-color: rgba($cru-grey,.8); }
+    &:hover { background-color: $cru-grey; }
     // &:hover + & { border-right-color: transparent; }
   }
   &__link {

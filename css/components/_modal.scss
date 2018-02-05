@@ -41,8 +41,8 @@
     padding-left: $icon-size;
     padding-right: $icon-size;
     padding-bottom: ($icon-size*2);
-    background-color: $grey-dark;
-    background-color: rgba($grey-dark,.9);
+    background-color: $grey-darker;
+    background-color: rgba($grey-darker,.9);
     cursor: pointer;
     overflow: auto;
     &.is-open { display: block; }

@@ -31,9 +31,10 @@
     }
   }
   &--banner-sub {
-    font-size: $s6;
-    letter-spacing: .5em;
-    text-indent: .5em;
+    font-size: $s5;
+    letter-spacing: .2em;
+    text-indent: .2em;
+    line-height: 1.33;
     .backgroundblendmode & { text-shadow: none; }
   }
 
@@ -43,7 +44,7 @@
   &--light      { font-weight: 200; }
   &--bold       { font-weight: 500; }
   &--bolder     { font-weight: 600; }
-  &--kerning    { letter-spacing: .25em; }
+  &--kerning    { letter-spacing: .1em; }
   &--kerning-lg { letter-spacing: .5em; }
   &--tight      { line-height: .9; }
   &--tighter    { line-height: .8; }
@@ -90,25 +91,36 @@
     &--xxxs         { font-size: $s1; }
   }
 
-  &--fancy {
-    position: relative;
-    display: inline-block;
-    margin-top: $s4;
-    margin-bottom: $s2;
-    line-height: 1;
-    letter-spacing: -.015em;
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
+  &--seporated {
+    span {
       display: block;
-      height: 1px;
-      background-color: rgba($white, .5);
+      &:before {
+        content: '';
+        display: block;
+      }
     }
-    &:before { top: -16px; }
-    &:after  { bottom: -7px; }
+    span + span:before {
+      height: 1px;
+      width: $s4;
+      margin: $s-1 auto;
+      background-color: rgba($white,.75);
+    }
+    @include bp(lg) {
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        &:before {
+          display: inline-block;
+          height: $s6;
+          vertical-align: inherit;
+        }
+      }
+      span + span:before {
+        width: 1px;
+        height: $s6;
+        margin: 0 $s3;
+      }
+    }
   }
 
 }

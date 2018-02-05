@@ -139,7 +139,7 @@
   padding: $s4 $s0;
   text-align: center;
   color: $cru-red;
-  background-color: rgba($white,.4);
+  background-color: rgba($cru-beige-light,.4);
   &__list {
     margin-top: $s1;
     line-height: 1;
@@ -153,9 +153,8 @@
   position: relative;
   display: inline-block;
   width: 210px;
-  opacity: .8;
-  transition: opacity $transition-time ease;
   cursor: pointer;
+  background-color: $grey;
   &:before{
     content: '';
     position: absolute;
@@ -171,8 +170,12 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  &:hover{ opacity: 1; }
-  & + & { margin-left: 10px; }
+  .bg-img {
+    opacity: .75;
+    transition: opacity $transition-time ease;
+  }
+  &:hover .bg-img { opacity: 1; }
+  & + &           { margin-left: 10px; }
   @include bp(large){
     & + & { margin-left: 20px; }
   }

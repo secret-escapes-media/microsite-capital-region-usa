@@ -49,6 +49,7 @@ gulp.task('js', function(){
         './js/_components/offer-countdown.js',
         './js/_components/modal.js',
         './js/_components/modal-nav.js',
+        './js/_components/video.js',
 
         // custom js for project
         './js/script.js',
