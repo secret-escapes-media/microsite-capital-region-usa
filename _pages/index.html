@@ -2,17 +2,18 @@
 layout: default
 id: overview
 nav-order: 1
-title: Explore USA's Capital Region
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati debitis, exercitationem enim veniam esse totam libero, repudiandae ad fugiat molestiae, in nobis. Modi, sed maxime tempora est repellendus eligendi!
+title: Discover America's Capital Region
+intro: Discover startling diversity in America’s Capital Region, where Washington, DC, Maryland and Virginia meet to offer any traveller natural splendour, fascinating heritage and foodie delights.
 ---
 
 <div class="site-title">
   <div class="row row--padding text--center page__content">
     <div class="row">
       <div class="title title--xxs title--kerning title--seporated"><span>Washington, DC</span><span>Virginia</span><span>Maryland</span></div>
-      <h1 class="title title--banner">DC & Beyond</h1>
+      <h1 class="hidden">DC & Beyond</h1>
+      <img class="js-svg-swap js-title banner-title" src="{{site.baseurl}}/img/content/title-horizontal.png" alt="DC & Beyond">
       <h2 class="row row--md title title--banner-sub space--xs">Discover America's Capital Region</h2>
-      <a href="#offers" class="btn btn--red">See Offers</a>
+      <a id="track-title-offer-btn" href="#offers" class="btn btn--red">See Offers</a>
     </div>
   </div>
   {% include nav/microsite-nav.html %}
@@ -28,7 +29,7 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati 
     </div>
     <div class="col">
       <div class="text--lg">
-        <p>Discover startling diversity in America’s Capital Region, where Washington, DC, Maryland and Virginia meet to offer any traveller natural splendour, fascinating heritage and foodie delights.</p>
+        <p>{{page.intro}}</p>
         <p class="space--xs">Two vibrant states encircle the neo-classical elegance of America’s capital, Washington, DC. Discover the urban charms of the capital, before embarking on adventurous drives through jaw-dropping countryside. Historical curiosities abound, from America’s first settlements to Civil War sites, interspersed with enthralling outdoor adventures. Unpick wine trails, alight at Michelin restaurants, and experience America’s diversity all in this remarkable region.</p>
       </div>
     </div>

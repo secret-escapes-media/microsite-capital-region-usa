@@ -3,8 +3,12 @@
 
 // default sections
 .section {
-  padding-top: $s8;
-  padding-bottom: $s8;
+  padding-top: $s4;
+  padding-bottom: $s4;
+  @include bp(lg){
+    padding-top: $s8;
+    padding-bottom: $s8;
+  }
 }
 
 .row {
@@ -13,8 +17,8 @@
 
 .col {
   & + & {
-    margin-top: $s4;
-    @include bp(lg){ margin-top: 0; }
+    margin-top: $s3;
+    @include bp(800px){ margin-top: 0; }
   }
 }
 

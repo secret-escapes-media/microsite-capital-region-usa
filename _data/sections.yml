@@ -136,7 +136,7 @@
           <h3 class="title title--md text--red">Travelling to the Capital Region</h3>
           <p class="space--xs">Just 26 miles west of Washington, DC, Washington Dulles International Airport is centrally located in America's Capital Region and convenient to all destinations and activities across Washington, DC, Virginia and Maryland. Daily nonstop flights from the UK to Washington Dulles International Airport with British Airways, United Airlines and Virgin Atlantic make getting here easy.</p>
           <p class="space--xs">Download your copy of the 2018/2019 Capital Region USA guide to read more.</p>
-          <a href="http://digital.milespartnership.com/publication/?i=459070#%7B%22issue_id%22:459070,%22page%22:0%7D" class="btn btn--red-outline" target="_blank">Download the guide</a>
+          <a id="track-guide-download" href="http://digital.milespartnership.com/publication/?i=459070#%7B%22issue_id%22:459070,%22page%22:0%7D" class="btn btn--red-outline" target="_blank">Download the guide</a>
         </div>
       </div>
     </div>

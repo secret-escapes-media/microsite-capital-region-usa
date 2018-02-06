@@ -65,7 +65,7 @@ $page-margin: $s4;
   }
 
   // breakpoint for all columns
-  @include bp(lg){
+  @include bp(800px){
 
     // aligns columns vertically
     .flexbox &--valign {

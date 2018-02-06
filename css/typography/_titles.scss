@@ -17,24 +17,13 @@
     font-weight: 200;
     text-transform: none;
   }
-
-  &--banner {
-    $shadow-travel: 2px;
-    font-size: $s12;
-    font-weight: 500;
-    line-height: 1.1;
-    .backgroundblendmode & {
-      text-shadow:
-      $shadow-travel $shadow-travel 0 $black,
-      ($shadow-travel * 2) ($shadow-travel * 2) 0 rgba($white,.66);
-      mix-blend-mode: screen;
-    }
-  }
   &--banner-sub {
-    font-size: $s5;
+    font-size: $s2;
     letter-spacing: .2em;
     text-indent: .2em;
     line-height: 1.33;
+    @include bp(md) { font-size: $s3; }
+    @include bp(xl) { font-size: $s5; }
     .backgroundblendmode & { text-shadow: none; }
   }
 

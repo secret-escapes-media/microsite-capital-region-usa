@@ -37,16 +37,26 @@
     right: 0;
     bottom: 0;
     z-index: $z-overlay;
-    padding-top: ($icon-size*2);
-    padding-left: $icon-size;
-    padding-right: $icon-size;
-    padding-bottom: ($icon-size*2);
+    padding-top: ($icon-size * 1.5);
+    padding-left: ($icon-size / 2.5);
+    padding-right: ($icon-size / 2.5);
+    padding-bottom: ($icon-size * 6);
     background-color: $grey-darker;
     background-color: rgba($grey-darker,.9);
     cursor: pointer;
     overflow: auto;
+    // smooth scrolling ios
+    -webkit-overflow-scrolling: touch;
     &.is-open { display: block; }
     &.is-closed { display: none; }
+    @include bp(md){
+      padding-top: ($icon-size*2);
+      padding-left: $icon-size;
+      padding-right: $icon-size;
+    }
+    @include bp(xl){
+      padding-bottom: ($icon-size*2);
+    }
   }
   &__content {
     background-color: $white;
@@ -76,30 +86,48 @@
     &:hover{ background-color: $black; }
   }
   &__nav {
-    position: absolute;
-    bottom: -($icon-size);
-    z-index: $z-overlay-upper;
-    top: 50%;
-    width: $icon-size;
-    height: ($icon-size*2);
-    margin-top: -($icon-size/2);
-    background-color: rgba($black, .5);
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: $icon-size;
+    background-color: rgba($black, .8);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1em;
+    background-size: .75em;
     cursor: pointer;
     @include transition;
     &--next {
-      right: -($icon-size);
+      right: 0;
+      border-left: 1px solid rgba($white,.5);
       background-image: url('../img/icons/arrow-right.png');
       .svg & { background-image: url('../img/icons/arrow-right.svg'); }
     }
     &--previous {
-      left: -($icon-size);
+      left: 0;
       background-image: url('../img/icons/arrow-left.png');
       .svg & { background-image: url('../img/icons/arrow-left.svg'); }
     }
-    &:hover{ background-color: $black; }
+    @include bp(md) {
+      position: absolute;
+      bottom: -($icon-size);
+      z-index: $z-overlay-upper;
+      top: 50%;
+      width: $icon-size;
+      height: ($icon-size*2);
+      margin-top: -($icon-size/2);
+      background-color: rgba($black, .5);
+      background-size: 1em;
+      &--next {
+        border-left: 0;
+        right: -($icon-size);
+      }
+      &--previous { left: -($icon-size); }
+      &:hover     { background-color: $black; }
+    }
+
   }
 }
 

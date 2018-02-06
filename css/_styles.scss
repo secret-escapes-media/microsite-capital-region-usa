@@ -1,7 +1,6 @@
 // general styles for the project that wouldn't be a reuseable component
 
 .bg {
-  &--white       { background-color: $white; }
   &--grey        { background-color: $grey-lightest; }
   &--beige       { background-color: $cru-beige; }
   &--beige-light { background-color: $cru-beige-light; }
@@ -10,40 +9,27 @@
 
 .site-title {
   position: relative;
-  height: 750px;
-  padding-top: $core-nav-height-sm;
+  height: 630px;
+  padding-top: ($core-nav-height-sm * 1.5);
   padding-bottom: $core-nav-height-sm;
   color: $white;
   @include bp(md){
-    padding-top: $core-nav-height;
+    padding-top: ($core-nav-height * 1.5);
     padding-bottom: $core-nav-height;
+    .flexbox & {
+      padding-top: $core-nav-height;
+    }
   }
-  @include vbp(650px){
+  @include vbp(630px){
     height: 100%;
     padding-top: 22.5vh;
   }
   .flexbox & {
     display: flex;
     align-items: center;
-    padding-top: $core-nav-height;
+    padding-top: $core-nav-height-sm;
   }
-}
 
-.img-block {
-  text-align: center;
-  line-height: 0;
-  > * { display: inline-block; }
-  &--3-3-3 > * { width: 100%; max-width: 300px; }
-  @include bp(lg){
-    &--3-3-3 > * { width: 33.33%; max-width: none; }
-  }
-}
-
-.price {
-  color: $cru-red;
-  font-size: 1.5em;
-  font-weight: 400;
-  line-height: 1;
 }
 
 .site__bg {
@@ -54,9 +40,12 @@
   bottom: 0;
   z-index: $z-background;
   background-image: url('../img/bg/bg.jpg');
-  background-color: #302419;
+  background-color: #241a3c;
   @include background-attributes;
 }
+
+// colour shows on mobile scroll
+body { background-color: #241a3c; }
 
 .is-stuck {
   position: fixed;
@@ -64,21 +53,6 @@
   bottom: auto;
   z-index: $z-nav-upper;
 }
-
-.nbsp {
-  display: none;
-  @include bp(lg){ display: inline; }
-}
-
-
-
-
-
-
-
-
-
-
 
 .section {
   position: relative;
@@ -133,7 +107,6 @@
   }
 }
 
-
 .pois {
   margin-top: $s4;
   padding: $s4 $s0;
@@ -178,5 +151,18 @@
   & + &           { margin-left: 10px; }
   @include bp(large){
     & + & { margin-left: 20px; }
+  }
+}
+
+.banner-title {
+  max-width: 420px;
+  padding-top: $s3;
+  padding-left: $s4;
+  padding-right: $s4;
+  padding-bottom: $s0;
+  @include bp(lg){
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 850px;
   }
 }

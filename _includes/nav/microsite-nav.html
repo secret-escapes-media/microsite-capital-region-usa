@@ -3,7 +3,7 @@
   <div class="site-nav__wrap">
     <ul class="site-nav__list">
       {% assign site-sections = site.data.sections %}
-      {% for section in site-sections %}<li class="site-nav__item site-nav__item--{{ section.id }}"><a class="site-nav__link" href="#{{section.id}}">{% if section.nav-title %}{{section.nav-title}}{% else %}{{section.title}}{% endif %}</a></li>{% endfor %}<li class="site-nav__item site-nav__item--offers"><a class="site-nav__link" href="#offers">Offers</a>
+      {% for section in site-sections %}<li class="site-nav__item site-nav__item--{{ section.id }}"><a id="track-nav-{{section.id}}" class="site-nav__link" href="#{{section.id}}">{% if section.nav-title %}{{section.nav-title}}{% else %}{{section.title}}{% endif %}</a></li>{% endfor %}<li class="site-nav__item site-nav__item--offers"><a id="track-nav-offers" class="site-nav__link" href="#offers">Offers</a>
     </ul>
   </div>
 </div>
