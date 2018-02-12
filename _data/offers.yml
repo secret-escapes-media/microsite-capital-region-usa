@@ -47,3 +47,33 @@
   saved: 30
   expires: 2018/02/13
   link: https://www.secretescapes.com/oakhurst-inn-charlottesville-virginia/sale?gce_sa=0&utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
+
+- id: the-embassy-row-hotel
+  title: The Embassy Row Hotel
+  location: Washington, D.C., USA
+  description: An iconic Washington, D.C. hotel on Millionaires’ Row
+  price: 32
+  price-description: per person per night
+  saved: 36
+  expires: 2018/02/20
+  link: https://www.secretescapes.com/the-embassy-row-hotel-washington-dc-usa/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
+
+- id: oceanaire-resort-hotel
+  title: Oceanaire Resort Hotel
+  location: Virginia Beach, Virginia
+  description: A contemporary beach resort stay on Virginia Beach
+  price: 43
+  price-description: per studio per night
+  saved: 22
+  expires: 2018/02/20
+  link: https://www.secretescapes.com/oceanaire-resort-hotel-virginia-beach-virginia/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
+
+- id: revival
+  title: Revival
+  location: Baltimore, USA
+  description: A boutique Baltimore art hotel with karaoke rooms
+  price: 95
+  price-description: per room per night
+  saved: 40
+  expires: 2018/02/21
+  link: https://www.secretescapes.com/revival-baltimore-usa/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
