@@ -5,7 +5,7 @@
   price: 56
   price-description: per room per night
   saved: 28
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/hyatt-regency-bethesda-bethesda-maryland-uk/sale?gce_sa=0&utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: liaison-capitol-hill
@@ -15,7 +15,7 @@
   price: 75
   price-description: per room per night
   saved: 39
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/liaison-capitol-hill-capitol-hill-washington-dc/sale?gce_sa=0&utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: sandaway-waterfront-lodge
@@ -25,7 +25,7 @@
   price: 115
   price-description: per room per night
   saved: 43
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/sandaway-waterfront-lodge-oxford-maryland/sale?gce_sa=0&utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: the-inn-at-henderson-s-wharf
@@ -35,7 +35,7 @@
   price: 83
   price-description: per room per night
   saved: 37
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/the-inn-at-hendersons-wharf-maryland-usa/sale?gce_sa=0&utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: oakhurst-inn
@@ -45,7 +45,7 @@
   price: 76
   price-description: per room per night
   saved: 30
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/oakhurst-inn-charlottesville-virginia/sale?gce_sa=0&utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: the-embassy-row-hotel
@@ -55,18 +55,8 @@
   price: 32
   price-description: per person per night
   saved: 36
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/the-embassy-row-hotel-washington-dc-usa/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
-
-- id: oceanaire-resort-hotel
-  title: Oceanaire Resort Hotel
-  location: Virginia Beach, Virginia
-  description: A contemporary beach resort stay on Virginia Beach
-  price: 43
-  price-description: per studio per night
-  saved: 22
-  expires: 2018/02/20
-  link: https://www.secretescapes.com/oceanaire-resort-hotel-virginia-beach-virginia/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: revival
   title: Revival
@@ -75,7 +65,7 @@
   price: 95
   price-description: per room per night
   saved: 40
-  expires: 2018/02/21
+  expires: 2018/02/27
   link: https://www.secretescapes.com/revival-baltimore-usa/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
 
 - id: lansdowne-resort-spa
@@ -85,5 +75,25 @@
   price: 87
   price-description: per guestroom per night
   saved: 46
-  expires: 2018/02/20
+  expires: 2018/02/26
   link: https://www.secretescapes.com/lansdowne-resort-and-spa-potomac-river-valley-virginia/sale?utm_source=SE_MEDIA&utm_medium=hub&utm_campaign=CapitalRegion_Feb2018
+
+- id: oceanaire-resort-hotel
+  title: Oceanaire Resort Hotel
+  location: Virginia Beach, Virginia
+  description: A contemporary beach resort stay on Virginia Beach
+  price: 43
+  price-description: per studio per night
+  saved: 22
+  expires: 2018/02/26
+  link: https://www.secretescapes.com/oceanaire-resort-hotel-virginia-beach-virginia/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=CapitalRegion_Feb2018
+
+- id: the-historic-powhatan-resort
+  title: The Historic Powhatan Resort
+  location: Williamsburg, Virginia
+  description: A spacious accommodation, 15 minutes from Colonial Williamsburg
+  price: 10
+  price-description: per person per night
+  saved: 39
+  expires: 2018/02/27
+  link: https://www.secretescapes.com/the-historic-powhatan-resort-williamsburg-virginia/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=CapitalRegion_Feb2018
